@@ -59,42 +59,42 @@ module.exports = {
             auto_return: 'approved',
 
             payer: {
-                name: 'Ryan',
-                surname: 'Dahl',
+                name: 'Lalo',
+                surname: 'Landa',
                 email: 'test_user_63274575@testuser.com',
                 phone: {
                     area_code: '11',
-                    number: 55556666
+                    number: 22223333
                 },
                 adress: {
-                    zip_code: '1234',
-                    street_name: 'Monroe',
-                    street_number: 860
+                    zip_code: 1111,
+                    street_name: 'False',
+                    street_number: 123
                 }
             },
 
-            payment_method : {
+            payment_methods : {
                 excluded_payment_methods: [
-                    {id: 'visa'}
+                    {id: 'amex'}
                 ],
                 excluded_payment_types: [
                     {id: 'atm'}
                 ],
-                installments: 12
+                installments: 6
             },
 
             items: [
                 {
                     id: 1234,
-                    picture_url: 'https://mercadopago12345.herokuapp.com/images/products/jordan.jpg',
+                    picture_url: 'https://mercadopagodhclase.herokuapp.com/images/products/disruptor.jpg',
                     title: 'Nombre del producto',
                     description: 'Dispositivo móvil de Tienda e-commerce',
-                    unit_price: 999,
+                    unit_price: 9000,
                     quantity: 1
                 }
             ],
 
-            external_references: {}
+            external_reference: 'barreirobenjamin@gmail.com'
         }
 
         mercadopago.preferences.create(preference).then(response => {
