@@ -28,14 +28,20 @@ module.exports = {
             return res.render('failure');
         }
 
+        return res.render(404).end();
     },
     notifications: (req, res) => {
         console.log("webhook", req.body);
 
         res.status(200).end('ok');
     },
-
+    
     detail: (req, res) => {
+        return res.render("detail", { ...req.query });
+    },
+
+
+    comprar: (req, res) => {
         const host = 'https://mercadopagodhclase.herokuapp.com/'
         const url = host + 'callback?status=';
 

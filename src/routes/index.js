@@ -13,4 +13,7 @@ router.get('/callback', indexController.callback);
 
 router.post('/notifications', indexController.notifications)
 
+/* POST comprar */
+router.post('/comprar', indexController.comprar);
+
 module.exports = router;
