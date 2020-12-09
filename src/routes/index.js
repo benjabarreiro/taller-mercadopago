@@ -1,19 +1,16 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 const indexController = require("../controllers/indexController");
 
 /* GET home page. */
-router.get('/', indexController.home);
+router.get("/", indexController.home);
 
 /* GET detail page */
-router.get('/detail', indexController.detail);
+router.get("/detail", indexController.detail);
 
-router.get('/callback', indexController.callback);
+router.get("/callback", indexController.callback);
 
-router.post('/notifications', indexController.notifications)
-
-/* POST comprar */
-router.post('/comprar', indexController.comprar);
+router.post("/notifications", indexController.notifications);
 
 module.exports = router;
