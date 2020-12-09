@@ -9,6 +9,9 @@ module.exports = {
     home: (req, res) => {
         return res.render("index");
     },
+    detail: (req, res) => {
+        return res.render("detail", { ...req.query });
+    },
     callback: (req, res) => {
         console.log(req.query);
 
@@ -29,9 +32,6 @@ module.exports = {
         }
 
         return res.render(404).end();
-    },
-    detail: (req, res) => {
-        return res.render("detail", { ...req.query });
     },
 
     notifications: (req, res) => {
@@ -64,12 +64,12 @@ module.exports = {
                 email: 'test_user_63274575@testuser.com',
                 phone: {
                     area_code: '11',
-                    number: '22223333'
+                    number: 22223333
                 },
                 adress: {
                     zip_code: '1111',
                     street_name: 'False',
-                    street_number: '123'
+                    street_number: 123
                 }
             },
 
