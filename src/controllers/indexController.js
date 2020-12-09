@@ -84,7 +84,7 @@ module.exports = {
       items: [
         {
           id: 1234,
-          picture_url: `https://mercadopago-ayr.herokuapp.com/images/products/${req.query.img}`,
+          picture_url: `https://mercadopagodhclase.herokuapp.com/images/products/${req.query.img}`,
           title: req.query.title,
           description: "Dispositivo móvil de Tienda e-commerce",
           unit_price: Number(req.query.price),
